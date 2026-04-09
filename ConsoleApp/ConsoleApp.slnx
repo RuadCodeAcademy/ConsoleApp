@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Courseapplication/Courseapplication.csproj" />
+  <Project Path="DomainLayer/DomainLayer.csproj" Id="83a69112-842e-4e5b-811f-c4d8ae1a9ad1" />
+  <Project Path="RepositoryLayer/RepositoryLayer.csproj" Id="03bf2f24-28cb-4c07-81b5-6a135c9394fc" />
+  <Project Path="ServiceLayer/ServiceLayer.csproj" Id="d36b5bb6-15b3-4f9e-b9dc-4cbb349c071f" />
+</Solution>
