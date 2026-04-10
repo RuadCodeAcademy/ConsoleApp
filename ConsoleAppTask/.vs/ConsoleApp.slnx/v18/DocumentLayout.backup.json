@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\courseapplication\\controller\\coursegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|solutionrelative:courseapplication\\controller\\coursegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D36B5BB6-15B3-4F9E-B9DC-4CBB349C071F}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\servicelayer\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D36B5BB6-15B3-4F9E-B9DC-4CBB349C071F}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BF2F24-28CB-4C07-81B5-6A135C9394FC}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\repositorylayer\\repositories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BF2F24-28CB-4C07-81B5-6A135C9394FC}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repositories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|solutionrelative:courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GroupService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAD4vywAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T08:25:18.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GroupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T16:26:13.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CourseGroupController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Controller\\CourseGroupController.cs",
+              "RelativeDocumentMoniker": "Courseapplication\\Controller\\CourseGroupController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Controller\\CourseGroupController.cs*",
+              "RelativeToolTip": "Courseapplication\\Controller\\CourseGroupController.cs*",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAlwFYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T15:16:09.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Program.cs",
+              "RelativeDocumentMoniker": "Courseapplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Program.cs",
+              "RelativeToolTip": "Courseapplication\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T14:27:15.648Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
