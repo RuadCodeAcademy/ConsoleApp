@@ -1,5 +1,6 @@
 ﻿using Courseapplication.Helpers;
 using DomainLayer.Entities;
+using Microsoft.VisualBasic.FileIO;
 using ServiceLayer.Services.Implementations;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Courseapplication.Controller
 {
     public class CourseGroupController
     {
-        GroupService _groupService = new GroupService();
+        CourseGroupService _groupService = new CourseGroupService();
         public void Create()
         {
             Helper.PrintConsoleColor(ConsoleColor.Blue, "Add Group Name");
@@ -98,5 +99,77 @@ namespace Courseapplication.Controller
                 Helper.PrintConsoleColor(ConsoleColor.Red, "Please add courseGroups ");
             }
         }
+
+
+        public void Delete()
+        {
+            groupid: Helper.PrintConsoleColor(ConsoleColor.Blue, "Add Group Id");
+
+            string GroupId = Console.ReadLine();
+
+            int id;
+
+            bool isGroupId = int.TryParse(GroupId, out id);
+
+            if(isGroupId)
+            {
+                
+
+                CourseGroup courseGroup = _groupService.GetById(id);
+
+                if (courseGroup != null)
+                {
+                    _groupService.Delete(id);
+                    Helper.PrintConsoleColor(ConsoleColor.Green, $"{courseGroup.Name} deleted successfully!");
+                }
+
+                else
+                {
+                    Helper.PrintConsoleColor(ConsoleColor.Red, "group not found! ");
+                }
+            }
+            else
+            {
+                Helper.PrintConsoleColor(ConsoleColor.Red, "Add Correct Group id type ");
+                goto groupid;
+            }
+
+           
+            
+            
+        }
+
+        public void Search()
+        {
+            Helper.PrintConsoleColor(ConsoleColor.Blue, "Add teacher name");
+
+            string teachername = Console.ReadLine();
+
+            List<CourseGroup> courseGroups = _groupService.Search(teachername);
+
+            if (courseGroups.Any())
+            {
+                foreach (var courseGroup in courseGroups)
+                {
+                    Helper.PrintConsoleColor(ConsoleColor.Green, $"Group id :{courseGroup.Id}, Name : {courseGroup.Name}, Teacher:{courseGroup.Teacher}, Room: {courseGroup.Room}");
+
+                }
+            }
+
+            else
+            {
+                Helper.PrintConsoleColor(ConsoleColor.Red, $"group {teachername} not found ");
+            }
+
+
+
+
+        }
+
+        public void Update()
+        {
+
+        }
+
     }
 }

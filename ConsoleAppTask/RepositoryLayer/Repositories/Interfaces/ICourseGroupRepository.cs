@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer.Repositories.Interfaces
 {
-    public interface IRepository<T> where T : BaseEntity
+    public interface ICourseGroupRepository<T> where T : BaseEntity
     {
         void Create(T data);
 

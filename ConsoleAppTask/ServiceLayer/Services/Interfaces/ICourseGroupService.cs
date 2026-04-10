@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.Services.Interfaces
 {
-    public interface IGroupService
+    public interface ICourseGroupService
     {
         CourseGroup Create(CourseGroup courseGroup);
 
@@ -18,5 +18,7 @@ namespace ServiceLayer.Services.Interfaces
         CourseGroup GetById(int id);
 
         List<CourseGroup> GetAll();
+
+        List<CourseGroup> Search(string name);
     }
 }

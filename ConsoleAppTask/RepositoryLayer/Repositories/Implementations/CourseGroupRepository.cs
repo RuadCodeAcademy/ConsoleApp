@@ -6,9 +6,9 @@ using System.Text.RegularExpressions;
 
 namespace RepositoryLayer.Repositories.Implementations
 {
-    public class GroupRepository : IRepository<CourseGroup>
+    public class CourseGroupRepository : ICourseGroupRepository<CourseGroup>
     {
-        private GroupRepository _grouprepository;
+        private CourseGroupRepository _grouprepository;
 
 
         public void Create(CourseGroup data)
@@ -28,7 +28,7 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public void Delete(CourseGroup data)
         {
-            throw new NotImplementedException();
+            AppDbContext<CourseGroup>.datas.Remove(data);
         }
 
         public CourseGroup Get(Predicate<CourseGroup> predicate)
