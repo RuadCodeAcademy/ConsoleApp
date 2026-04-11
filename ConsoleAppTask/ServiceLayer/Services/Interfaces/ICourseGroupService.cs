@@ -19,6 +19,8 @@ namespace ServiceLayer.Services.Interfaces
 
         List<CourseGroup> GetAll();
 
-        List<CourseGroup> Search(string name);
+        List<CourseGroup> Searchbyteacher(string name);
+
+        List<CourseGroup> Searchbyroom(int room);
     }
 }

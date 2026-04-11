@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace RepositoryLayer.Repositories.Implementations
 {
-    public class CourseGroupRepository : ICourseGroupRepository<CourseGroup>
+    public class CourseGroupRepository : IRepository<CourseGroup>
     {
         private CourseGroupRepository _grouprepository;
 
@@ -43,7 +43,13 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public void Update(CourseGroup data)
         {
-            throw new NotImplementedException();
+            CourseGroup dbcoursegroup = Get(c => c.Id == data.Id);
+
+            
+
+            dbcoursegroup.Name = data.Name;
+            dbcoursegroup.Teacher = data.Teacher;
+            dbcoursegroup.Room = data.Room;
         }
     }
 }

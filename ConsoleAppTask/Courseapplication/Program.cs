@@ -9,8 +9,9 @@ namespace Courseapplication
         static void Main(string[] args)
         {
             Helper.PrintConsoleColor(ConsoleColor.Blue, "Select one option");
-            Helper.PrintConsoleColor(ConsoleColor.Yellow, "1 - CreateGroup\n2 - GetGroup by id\n3 - GetAllGroups\n4 - DeleteGroup\n5 - UpdateGroup\n6 - Search Group by Teacher");
+            GetMenus();
             CourseGroupController coursecontroller = new();
+            StudentController studentcontroller = new();
             while (true)
             {
             Selectoption1: string selectOption = Console.ReadLine();
@@ -23,31 +24,39 @@ namespace Courseapplication
                 {
                     switch (selectnumber)
                     {
-                        case 1:
+                        case (int)Menus.CreateGroup:
 
-                            coursecontroller.Create();
+                            coursecontroller.CreateGroup();
                             goto Selectoption1;
                             break;
 
-                        case 2:
-                            coursecontroller.GetById();
+                        case (int)Menus.GetGroupById:
+                            coursecontroller.GetGroupById();
                             goto Selectoption1;
                             break;
 
-                        case 3: 
-                            coursecontroller.GetAll();
+                        case (int)Menus.GetAllGroups: 
+                            coursecontroller.GetAllGroups();
                             goto Selectoption1;
 
-                        case 4:
-                            coursecontroller.Delete();
+                        case (int)Menus.DeleteGroup:
+                            coursecontroller.DeleteGroup();
                             goto Selectoption1;
 
-                        case 5:
-                            coursecontroller.Update();
+                        case (int)Menus.UpdateGroup:
+                            coursecontroller.UpdateGroup();
                             goto Selectoption1;
 
-                        case 6:
-                            coursecontroller.Search();
+                        case (int)Menus.SearchGroupByTeacher:
+                            coursecontroller.SearchGroupByTeacher();
+                            goto Selectoption1;
+
+                        case (int)Menus.SearchGroupByRoom:
+                            coursecontroller.SearchGroupByRoom();
+                            goto Selectoption1;
+
+                        case (int)Menus.CreateStudent:
+                            studentcontroller.CreateStudent();
                             goto Selectoption1;
 
                     }
@@ -58,6 +67,11 @@ namespace Courseapplication
                     goto Selectoption1;
                 }
             }
+        }
+
+        private static void GetMenus()
+        {
+            Helper.PrintConsoleColor(ConsoleColor.Yellow, "1 - CreateGroup\n2 - GetGroup by id\n3 - GetAllGroups\n4 - DeleteGroup\n5 - UpdateGroup\n6 - Search Group by Teacher\n7 - Search Group by Room\n8 - CreateStudent");
         }
     }
 }

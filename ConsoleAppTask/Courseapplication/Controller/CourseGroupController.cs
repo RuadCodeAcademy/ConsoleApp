@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Courseapplication.Controller
@@ -13,7 +14,7 @@ namespace Courseapplication.Controller
     public class CourseGroupController
     {
         CourseGroupService _groupService = new CourseGroupService();
-        public void Create()
+        public void CreateGroup()
         {
             Helper.PrintConsoleColor(ConsoleColor.Blue, "Add Group Name");
 
@@ -49,7 +50,7 @@ namespace Courseapplication.Controller
             }
         }
 
-        public void GetById()
+        public void GetGroupById()
         {
         groupid : Helper.PrintConsoleColor(ConsoleColor.Blue, "Add Group Id");
 
@@ -81,7 +82,7 @@ namespace Courseapplication.Controller
         }
 
 
-        public void GetAll()
+        public void GetAllGroups()
         {
             List<CourseGroup> courseGroups = _groupService.GetAll();
 
@@ -101,7 +102,7 @@ namespace Courseapplication.Controller
         }
 
 
-        public void Delete()
+        public void DeleteGroup()
         {
             groupid: Helper.PrintConsoleColor(ConsoleColor.Blue, "Add Group Id");
 
@@ -139,13 +140,13 @@ namespace Courseapplication.Controller
             
         }
 
-        public void Search()
+        public void SearchGroupByTeacher()
         {
             Helper.PrintConsoleColor(ConsoleColor.Blue, "Add teacher name");
 
             string teachername = Console.ReadLine();
 
-            List<CourseGroup> courseGroups = _groupService.Search(teachername);
+            List<CourseGroup> courseGroups = _groupService.Searchbyteacher(teachername);
 
             if (courseGroups.Any())
             {
@@ -166,10 +167,127 @@ namespace Courseapplication.Controller
 
         }
 
-        public void Update()
+        public void SearchGroupByRoom()
         {
+            Helper.PrintConsoleColor(ConsoleColor.Blue, "Add group room");
 
+            int grouproom = Convert.ToInt32(Console.ReadLine());
+
+            List<CourseGroup> courseGroups = _groupService.Searchbyroom(grouproom);
+
+
+            if (courseGroups.Any())
+            {
+                foreach (var courseGroup in courseGroups)
+                {
+                    Helper.PrintConsoleColor(ConsoleColor.Green, $"Group id :{courseGroup.Id}, Name : {courseGroup.Name}, Teacher:{courseGroup.Teacher}, Room: {courseGroup.Room}");
+
+                }
+            }
+
+            else
+            {
+                Helper.PrintConsoleColor(ConsoleColor.Red, $"group room  {grouproom} not found ");
+            }
         }
+
+        public void UpdateGroup()
+        {
+        groupid: Helper.PrintConsoleColor(ConsoleColor.Blue, "Add Group Id");
+
+            string GroupId = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(GroupId))
+            {
+                Helper.PrintConsoleColor(ConsoleColor.Red, "Update operation canceled!");
+                goto groupid;
+            }
+                
+
+           
+            int id;
+
+            bool isGroupId = int.TryParse(GroupId, out id);
+
+            if (isGroupId)
+            {
+                var findgroupid = _groupService.GetById(id);
+
+                if (findgroupid != null)
+                {
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, $"Current Name :{findgroupid.Name}. Add  new Group Name ");
+                    string groupnewname = Console.ReadLine();
+
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, $"Current Teacher :{findgroupid.Teacher}. Add  new Group Teacher ");
+                    string groupnewteacher = Console.ReadLine();
+
+                    if (string.IsNullOrWhiteSpace(groupnewname))
+                    {
+                        groupnewname = findgroupid.Name;
+                    }
+
+                    if (string.IsNullOrWhiteSpace(groupnewteacher))
+                    {
+                        groupnewteacher = findgroupid.Teacher;
+                    }
+
+
+                roomtype: Helper.PrintConsoleColor(ConsoleColor.Blue, $"Current Group Room :{findgroupid.Room}. Add  new Group Room ");
+                    string groupnewroom = Console.ReadLine();
+                    int room = findgroupid.Room;
+
+                    if (!string.IsNullOrWhiteSpace(groupnewroom))
+                    {
+                        bool isroom = int.TryParse(groupnewroom, out room);
+
+                        if (!isroom)
+                        {
+                            Helper.PrintConsoleColor(ConsoleColor.Red, "Add Correct room type");
+                            goto roomtype;
+                        }
+
+                        CourseGroup courseGroup = new CourseGroup() { Name = groupnewname, Teacher = groupnewteacher, Room = room };
+
+                        var updategroup = _groupService.Update(id, courseGroup);
+
+                        if(updategroup == null)
+                        {
+                            Helper.PrintConsoleColor(ConsoleColor.Red, "Group not updated");
+                            goto groupid;
+                        }
+
+                        else
+                        {
+                            Helper.PrintConsoleColor(ConsoleColor.Green, $"Group id :{updategroup.Id}, Group name : {updategroup.Name}, Group Teacher : {updategroup.Teacher}, Group Room :{updategroup.Room}");
+
+                        }
+
+                    }
+                    else
+                    {
+                        Helper.PrintConsoleColor(ConsoleColor.Green, $"Group id :{findgroupid.Id}, Group name : {findgroupid.Name}, Group Teacher : {findgroupid.Teacher}, Group Room :{findgroupid.Room}");
+
+                    }
+
+                }
+                else
+                {
+                    Helper.PrintConsoleColor(ConsoleColor.Red, "Group not found");
+                    goto groupid;
+                }
+
+
+
+            }
+            else
+            {
+                Helper.PrintConsoleColor(ConsoleColor.Red, "Add Correct group id");
+                goto groupid;
+            }
+        }
+
+
+       
 
     }
 }
