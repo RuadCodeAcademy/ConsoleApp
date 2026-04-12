@@ -16,6 +16,15 @@ namespace Courseapplication.Helpers
         SearchGroupByTeacher = 6,
         SearchGroupByRoom = 7,
         CreateStudent = 8,
+        UpdateStudent = 9,
+        GetStudentById = 10,
+        DeleteStudent = 11,
+        GetStudentsByAge = 12,
+        GetStudentsByGroupId = 13,
+        SearchGroupByName = 14,
+        SearchStudentByNameOrSurname = 15,  
+
+
 
 
 

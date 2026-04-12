@@ -1,4 +1,5 @@
 ﻿using DomainLayer.Entities;
+using RepositoryLayer.Data;
 using RepositoryLayer.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,9 @@ namespace RepositoryLayer.Repositories.Implementations
             try
             {
                 if (data is null) throw new DirectoryNotFoundException("student not found");
+                AppDbContext<Student>.datas.Add(data);
+
+
             }
             catch (Exception ex)
             {
@@ -25,22 +29,43 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public void Delete(Student data)
         {
-            throw new NotImplementedException();
+            AppDbContext<Student>.datas.Remove(data);
         }
 
         public Student Get(Predicate<Student> predicate)
         {
-            throw new NotImplementedException();
+            return predicate != null ? AppDbContext<Student>.datas.Find(predicate) : null;
         }
 
         public List<Student> GetAll(Predicate<Student> predicate)
         {
-            throw new NotImplementedException();
+            return predicate != null ? AppDbContext<Student>.datas.FindAll(predicate) : AppDbContext<Student>.datas;
         }
+
+       
 
         public void Update(Student data)
         {
             throw new NotImplementedException();
+        }
+
+
+        public List<Student> GetStudentsByAge(int age)
+        {
+            return AppDbContext<Student>.datas.FindAll(s => s.age == age);
+        }
+
+        public List<Student> GetAllByGroupId(int groupId)
+        {
+            return AppDbContext<Student>.datas.FindAll(s => s.group != null && s.group.Id == groupId);
+        }
+
+        public List<Student> GetByNameOrSurname(string nameOrSurname)
+        {
+            return AppDbContext<Student>.datas.Where(s =>
+                s.Name.Contains(nameOrSurname, StringComparison.OrdinalIgnoreCase) ||
+                s.SurName.Contains(nameOrSurname, StringComparison.OrdinalIgnoreCase))
+                .ToList();
         }
     }
 }

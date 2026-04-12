@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ServiceLayer.Services.Implementations
@@ -32,11 +33,51 @@ namespace ServiceLayer.Services.Implementations
 
             student.Id = _count;
 
-            student.group = group;  
+            student.group = group;
 
             _count++;
 
+            _studentRepository.Create(student);
+
             return student;
+        }
+
+        public void Delete(int id)
+        {
+            Student student = GetById(id);
+
+            _studentRepository.Delete(student);
+        }
+
+
+
+        public Student GetById(int id)
+        {
+
+            Student student = _studentRepository.Get(s => s.Id == id);
+            if (student != null) return student;
+            return null;
+
+        }
+
+        public Student Update(int id, Student student)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Student> GetStudentsByAge(int age)
+        {
+            return _studentRepository.GetStudentsByAge(age);
+        }
+
+        public List<Student> GetStudentsByGroupId(int groupId)
+        {
+            return _studentRepository.GetAllByGroupId(groupId); 
+        }
+
+        public List<Student> GetByNameOrSurname(string nameOrSurname)
+        {
+            return _studentRepository.GetByNameOrSurname(nameOrSurname);
         }
     }
 }

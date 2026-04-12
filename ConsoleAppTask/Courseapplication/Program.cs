@@ -9,7 +9,9 @@ namespace Courseapplication
         static void Main(string[] args)
         {
             Helper.PrintConsoleColor(ConsoleColor.Blue, "Select one option");
+
             GetMenus();
+
             CourseGroupController coursecontroller = new();
             StudentController studentcontroller = new();
             while (true)
@@ -59,6 +61,38 @@ namespace Courseapplication
                             studentcontroller.CreateStudent();
                             goto Selectoption1;
 
+                        case (int)Menus.UpdateStudent:
+                            studentcontroller.UpdateStudent();
+                            goto Selectoption1;
+
+                        case (int)Menus.GetStudentById:
+                            studentcontroller.GetStudentById();
+                            goto Selectoption1;
+
+                        case (int)Menus.DeleteStudent:
+                            studentcontroller.DeleteStudent();
+                            goto Selectoption1;
+
+                        case (int)Menus.GetStudentsByAge:
+                            studentcontroller.GetStudentsByAge();
+                            goto Selectoption1;
+
+                        case (int)Menus.GetStudentsByGroupId:
+                            studentcontroller.GetStudentsByGroupId();
+                            goto Selectoption1;
+
+                        case (int)Menus.SearchGroupByName:
+                            studentcontroller.SearchGroupByName();
+                            goto Selectoption1;
+
+                        case (int)Menus.SearchStudentByNameOrSurname:
+                            studentcontroller.SearchStudentByNameOrSurname();
+                            goto Selectoption1;
+
+
+
+
+
                     }
                 }
                 else
@@ -71,7 +105,7 @@ namespace Courseapplication
 
         private static void GetMenus()
         {
-            Helper.PrintConsoleColor(ConsoleColor.Yellow, "1 - CreateGroup\n2 - GetGroup by id\n3 - GetAllGroups\n4 - DeleteGroup\n5 - UpdateGroup\n6 - Search Group by Teacher\n7 - Search Group by Room\n8 - CreateStudent");
+            Helper.PrintConsoleColor(ConsoleColor.Yellow, "1 - CreateGroup\n2 - GetGroup by id\n3 - GetAllGroups\n4 - DeleteGroup\n5 - UpdateGroup\n6 - Search Group by Teacher\n7 - Search Group by Room\n8 - CreateStudent\n9 - Update Student\n10 - Get Student by id\n11 - Delete Student\n12 - GetStudentsByAge\n13 - GetStudentsByGroupId\n14 - SearchGroupByName\n15 - SearchStudentByNameOrSurname");
         }
     }
 }

@@ -51,5 +51,10 @@ namespace RepositoryLayer.Repositories.Implementations
             dbcoursegroup.Teacher = data.Teacher;
             dbcoursegroup.Room = data.Room;
         }
+
+        public CourseGroup GetByName(string name)
+        {
+            return AppDbContext<CourseGroup>.datas.Find(group => group.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
     }
 }

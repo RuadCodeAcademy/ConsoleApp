@@ -74,5 +74,10 @@ namespace ServiceLayer.Services.Implementations
 
             return GetById(id);
         }
+
+        public CourseGroup GetByName(string name)
+        {
+            return _coursegroupRepository.GetByName(name);  // Repository-dəki GetByName metodunu çağırır
+        }
     }
 }
