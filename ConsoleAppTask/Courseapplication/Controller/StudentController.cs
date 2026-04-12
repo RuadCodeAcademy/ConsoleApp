@@ -96,7 +96,65 @@ namespace Courseapplication.Controller
         public void UpdateStudent()
         {
 
+
+        studentId: Helper.PrintConsoleColor(ConsoleColor.Blue, "Enter Student ID to update:");
+
+            string studentId = Console.ReadLine();
+
+            int id;
+            bool isStudentIdValid = int.TryParse(studentId, out id);
+
+            if (isStudentIdValid)
+            {
+                
+                Student student = _studentService.GetById(id);
+
+                if (student != null)
+                {
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, $"Current Name: {student.Name}");
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, "Enter new Name (leave blank to keep current):");
+                    string newName = Console.ReadLine();
+                    if (!string.IsNullOrEmpty(newName)) student.Name = newName;
+
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, $"Current Surname: {student.SurName}");
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, "Enter new Surname (leave blank to keep current):");
+                    string newSurName = Console.ReadLine();
+                    if (!string.IsNullOrEmpty(newSurName)) student.SurName = newSurName;
+
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, $"Current Age: {student.age}");
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, "Enter new Age (leave blank to keep current):");
+                    string newAge = Console.ReadLine();
+                    if (int.TryParse(newAge, out int age)) student.age = age;
+
+                    Helper.PrintConsoleColor(ConsoleColor.Blue, "Enter new Group ID (leave blank to keep current):");
+                    string newGroupId = Console.ReadLine();
+                    if (int.TryParse(newGroupId, out int groupId))
+                    {
+                        var group = _courseGroupService.GetById(groupId);
+                        if (group != null) student.group = group;
+                        else Helper.PrintConsoleColor(ConsoleColor.Red, "Invalid Group ID");
+                    }
+
+                    
+                    _studentService.Update(id, student);
+                    Helper.PrintConsoleColor(ConsoleColor.Green, "Student updated successfully!");
+
+                    Helper.PrintConsoleColor(ConsoleColor.Green, $"Student ID: {student.Id}, Name: {student.Name}, Surname: {student.SurName}, Age: {student.age}, Group: {student.group.Name} ");
+                }
+                else
+                {
+                    Helper.PrintConsoleColor(ConsoleColor.Red, "Student not found.");
+                    goto studentId;
+                }
+            }
+            else
+            {
+                Helper.PrintConsoleColor(ConsoleColor.Red, "Invalid Student ID.");
+                goto studentId;
+            }
         }
+
+        
 
         public void GetStudentById()
         {

@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|solutionrelative:courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\courseapplication\\helpers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|solutionrelative:courseapplication\\helpers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\courseapplication\\controller\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console_task\\consoleapptask\\courseapplication\\controller\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|solutionrelative:courseapplication\\controller\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D36B5BB6-15B3-4F9E-B9DC-4CBB349C071F}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console_task\\consoleapptask\\courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|solutionrelative:courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|c:\\users\\lenovo\\desktop\\console_task\\consoleapptask\\courseapplication\\helpers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44EF2728-8633-B903-E10E-B0BD20720577}|Courseapplication\\Courseapplication.csproj|solutionrelative:courseapplication\\helpers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BF2F24-28CB-4C07-81B5-6A135C9394FC}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\lenovo\\desktop\\console_task\\consoleapptask\\repositorylayer\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BF2F24-28CB-4C07-81B5-6A135C9394FC}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D36B5BB6-15B3-4F9E-B9DC-4CBB349C071F}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\lenovo\\desktop\\console_task\\consoleapptask\\servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D36B5BB6-15B3-4F9E-B9DC-4CBB349C071F}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03BF2F24-28CB-4C07-81B5-6A135C9394FC}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\lenovo\\desktop\\console\\consoleapptask\\repositorylayer\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03BF2F24-28CB-4C07-81B5-6A135C9394FC}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D36B5BB6-15B3-4F9E-B9DC-4CBB349C071F}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\lenovo\\desktop\\console_task\\consoleapptask\\servicelayer\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D36B5BB6-15B3-4F9E-B9DC-4CBB349C071F}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\Courseapplication\\Program.cs",
               "RelativeDocumentMoniker": "Courseapplication\\Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\Courseapplication\\Program.cs",
               "RelativeToolTip": "Courseapplication\\Program.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAIwG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-09T14:27:15.648Z",
               "IsPinned": true,
@@ -48,52 +52,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Helpers\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\Courseapplication\\Helpers\\Menu.cs",
               "RelativeDocumentMoniker": "Courseapplication\\Helpers\\Menu.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Helpers\\Menu.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\Courseapplication\\Helpers\\Menu.cs",
               "RelativeToolTip": "Courseapplication\\Helpers\\Menu.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBgAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T11:50:13.318Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "RelativeToolTip": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAqwEQAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T09:33:37.432Z"
+              "WhenOpened": "2026-04-12T16:11:49.938Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\ServiceLayer\\Services\\Implementations\\StudentService.cs",
-              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\ServiceLayer\\Services\\Implementations\\StudentService.cs",
-              "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAzwFAAAAAJAAAAAAAAAA==",
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowC0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T09:42:29.865Z"
+              "WhenOpened": "2026-04-11T09:33:37.432Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Controller\\StudentController.cs",
-              "RelativeDocumentMoniker": "Courseapplication\\Controller\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CONSOLE\\ConsoleAppTask\\Courseapplication\\Controller\\StudentController.cs",
-              "RelativeToolTip": "Courseapplication\\Controller\\StudentController.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAzwBYBAAAwAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAjwFEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T10:15:08.626Z"
+              "WhenOpened": "2026-04-11T09:42:29.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\Courseapplication\\Controller\\StudentController.cs",
+              "RelativeDocumentMoniker": "Courseapplication\\Controller\\StudentController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Console_task\\ConsoleAppTask\\Courseapplication\\Controller\\StudentController.cs*",
+              "RelativeToolTip": "Courseapplication\\Controller\\StudentController.cs*",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAYwJAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T10:15:08.626Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -60,10 +60,7 @@ namespace ServiceLayer.Services.Implementations
 
         }
 
-        public Student Update(int id, Student student)
-        {
-            throw new NotImplementedException();
-        }
+
 
         public List<Student> GetStudentsByAge(int age)
         {
@@ -72,12 +69,19 @@ namespace ServiceLayer.Services.Implementations
 
         public List<Student> GetStudentsByGroupId(int groupId)
         {
-            return _studentRepository.GetAllByGroupId(groupId); 
+            return _studentRepository.GetAllByGroupId(groupId);
         }
 
         public List<Student> GetByNameOrSurname(string nameOrSurname)
         {
             return _studentRepository.GetByNameOrSurname(nameOrSurname);
+        }
+
+        public Student Update(int id, Student student)
+        {
+            student.Id = id; 
+            _studentRepository.Update(student); 
+            return student;
         }
     }
 }

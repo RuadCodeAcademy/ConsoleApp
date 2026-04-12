@@ -42,11 +42,25 @@ namespace RepositoryLayer.Repositories.Implementations
             return predicate != null ? AppDbContext<Student>.datas.FindAll(predicate) : AppDbContext<Student>.datas;
         }
 
-       
 
-        public void Update(Student data)
+        public void Update(Student student)
         {
-            throw new NotImplementedException();
+           
+
+            var existingStudent = AppDbContext<Student>.datas.FirstOrDefault(s => s.Id == student.Id);
+
+            if (existingStudent != null)
+            {
+                
+                existingStudent.Name = student.Name;
+                existingStudent.SurName = student.SurName;
+                existingStudent.age = student.age;
+                existingStudent.group = student.group;
+            }
+            else
+            {
+                throw new Exception("Student not found");
+            }
         }
 
 
